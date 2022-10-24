@@ -1,0 +1,94 @@
+@import url(./FontsFree-Net-Druk-Wide-Bold.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: #060507;
+    color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    zoom: 90%;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+}
+
+.header__img {
+    /* width: 375px; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    padding: 55px 64px;
+    height: fit-content;
+    text-transform: uppercase;
+}
+
+
+.nav img {
+    width: 285px;
+    height: 45px;
+    margin-right: calc(104px - 72px);
+}
+
+.nav__item {
+    font-family: 'Druk Wide Bold';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.hero {
+    transform: translateY(-210px);
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.right {
+    position: relative;
+    width: 950px;
+}
+
+.weel {
+    position: absolute;
+    right: 0;
+    animation: spin 10000ms linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.photo1 {
+    width: 950px;
+}
+
+.baseline {
+    position: absolute;
+    top: 720px;
+}
+
+.baseline img {
+    width: 1606px;
+}
+
+.photo3 {
+    position: absolute;
+    top: 0;
+    display: none;
+}
